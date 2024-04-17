@@ -5,18 +5,10 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 2.4
+// Lesson 2.5
 // Declaring, defining, and calling a function that demonstrates capabilities of std::cout.
 #include <iostream>
 using namespace std;
-
-int demoConsoleOutput();
-
-int main() {
-    demoConsoleOutput();
-
-    return 0;
-}
 
 int demoConsoleOutput() {
     cout << "This is a simple string literal" << endl;
@@ -26,3 +18,8 @@ int demoConsoleOutput() {
 
     return 0;
 }
+
+int main() {
+    return demoConsoleOutput();
+}
+
