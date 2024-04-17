@@ -5,7 +5,6 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-//#include <stdio.h>
 #include<iostream>
 
 int main() {
