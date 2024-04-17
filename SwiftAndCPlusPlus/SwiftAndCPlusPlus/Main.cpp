@@ -5,36 +5,28 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 3.1
+// Lesson 3.5
 #include <iostream>
-using namespace std;
-
-int firstNumber  = 0;
-int secondNumber = 0;
-int multiplicationResult = 0;
-
-void multiplyNumbers() {
-    cout << "Enter the first number: ";
-    cin >> firstNumber;
-
-    cout << "Enter the second number: ";
-    cin >> secondNumber;
-
-    multiplicationResult = firstNumber * secondNumber;
-
-    cout << firstNumber << " x " << secondNumber;
-    cout << " = " << multiplicationResult << endl;
-}
 
 int main() {
-    cout << "This program multiplies two numbers" << endl;
+    using namespace std;
 
-    multiplyNumbers();
+    cout << "Computing the size of inbuilt variable types" << endl;
 
-    cout << "Displaying from main(): ";
+    cout << "sizeof bool: " << sizeof(bool) << endl;
+    cout << "sizeof char: " << sizeof(char) << endl;
+    cout << "sizeof unsigned short int: " << sizeof(unsigned short) << endl;
+    cout << "sizeof short int: " << sizeof(short) << endl;
+    cout << "sizeof unsigned long int: " << sizeof(unsigned long) << endl;
+    cout << "sizeof long: " << sizeof(long) << endl;
+    cout << "sizeof int: " << sizeof(int) << endl;
+    cout << "sizeof unsigned long long: " << sizeof(unsigned long long) << endl;
+    cout << "sizeof long long: " << sizeof(long long) << endl;
+    cout << "sizeof unsigned int: " << sizeof(unsigned int) << endl;
+    cout << "sizeof float: " << sizeof(float) << endl;
+    cout << "sizeof double: " << sizeof(double) << endl;
 
-    cout << firstNumber << " x " << secondNumber;
-    cout << " = " << multiplicationResult << endl;
+    cout << "The output changes with compiler, hardware, and OS" << endl;
 
     return 0;
 }
