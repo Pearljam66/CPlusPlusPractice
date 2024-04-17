@@ -5,19 +5,19 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 3.6
+// Lesson 3.7
 #include <iostream>
-using namespace std;
 
 int main() {
+    using namespace std;
 
-    auto coinFlippedHeads = true;
-    auto largeNumber = 2500000000000;
-
-    cout << "coinFlippedHeads = " << coinFlippedHeads << ", ";
-    cout << "sizeof(coinFlippedHeads) = " <<  sizeof(coinFlippedHeads);
-    cout << endl << "largeNumber = " << largeNumber << ", ";
-    cout << "sizeof(largeNumber) = " << sizeof(largeNumber) << endl;
+    const double pi = 22.0 / 7;
+    double parp = 5.0;
+    cout << "The value of constant pi is: " << pi << endl;
+    cout << "The value of constant parp is: " << parp << endl;
+    //pi = 345;
+    parp = 10;
+    cout << "The value of constant parp is: " << parp << endl;
 
     return 0;
 }
