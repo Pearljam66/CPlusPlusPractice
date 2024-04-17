@@ -5,28 +5,19 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 3.5
+// Lesson 3.6
 #include <iostream>
+using namespace std;
 
 int main() {
-    using namespace std;
 
-    cout << "Computing the size of inbuilt variable types" << endl;
+    auto coinFlippedHeads = true;
+    auto largeNumber = 2500000000000;
 
-    cout << "sizeof bool: " << sizeof(bool) << endl;
-    cout << "sizeof char: " << sizeof(char) << endl;
-    cout << "sizeof unsigned short int: " << sizeof(unsigned short) << endl;
-    cout << "sizeof short int: " << sizeof(short) << endl;
-    cout << "sizeof unsigned long int: " << sizeof(unsigned long) << endl;
-    cout << "sizeof long: " << sizeof(long) << endl;
-    cout << "sizeof int: " << sizeof(int) << endl;
-    cout << "sizeof unsigned long long: " << sizeof(unsigned long long) << endl;
-    cout << "sizeof long long: " << sizeof(long long) << endl;
-    cout << "sizeof unsigned int: " << sizeof(unsigned int) << endl;
-    cout << "sizeof float: " << sizeof(float) << endl;
-    cout << "sizeof double: " << sizeof(double) << endl;
-
-    cout << "The output changes with compiler, hardware, and OS" << endl;
+    cout << "coinFlippedHeads = " << coinFlippedHeads << ", ";
+    cout << "sizeof(coinFlippedHeads) = " <<  sizeof(coinFlippedHeads);
+    cout << endl << "largeNumber = " << largeNumber << ", ";
+    cout << "sizeof(largeNumber) = " << sizeof(largeNumber) << endl;
 
     return 0;
 }
