@@ -5,28 +5,36 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 2.6
-// Using cin and cout to display number and text entered by a user.
+// Lesson 3.1
 #include <iostream>
-#include <string>
 using namespace std;
 
+int firstNumber  = 0;
+int secondNumber = 0;
+int multiplicationResult = 0;
+
+void multiplyNumbers() {
+    cout << "Enter the first number: ";
+    cin >> firstNumber;
+
+    cout << "Enter the second number: ";
+    cin >> secondNumber;
+
+    multiplicationResult = firstNumber * secondNumber;
+
+    cout << firstNumber << " x " << secondNumber;
+    cout << " = " << multiplicationResult << endl;
+}
+
 int main() {
-    // Declare a variable to store an integer.
-    int inputNumber;
+    cout << "This program multiplies two numbers" << endl;
 
-    cout << "Enter an integer: ";
+    multiplyNumbers();
 
-    // Store an integer given user input.
-    cin >> inputNumber;
+    cout << "Displaying from main(): ";
 
-    // The same with text i.e. string data
-    cout << "Enter your name: ";
-    string inputName;
-    cin >> inputName;
-
-    cout << inputName << " entered " << inputNumber << endl;
+    cout << firstNumber << " x " << secondNumber;
+    cout << " = " << multiplicationResult << endl;
 
     return 0;
 }
-
