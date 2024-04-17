@@ -5,21 +5,28 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 2.5
-// Declaring, defining, and calling a function that demonstrates capabilities of std::cout.
+// Lesson 2.6
+// Using cin and cout to display number and text entered by a user.
 #include <iostream>
+#include <string>
 using namespace std;
 
-int demoConsoleOutput() {
-    cout << "This is a simple string literal" << endl;
-    cout << "Writing number five: " << 5 << endl;
-    cout << "Performing division 10 / 5 = " << 10 / 5 << endl;
-    cout << "Pi is 22 / 7 = " << 22.0 / 7 << endl;
+int main() {
+    // Declare a variable to store an integer.
+    int inputNumber;
+
+    cout << "Enter an integer: ";
+
+    // Store an integer given user input.
+    cin >> inputNumber;
+
+    // The same with text i.e. string data
+    cout << "Enter your name: ";
+    string inputName;
+    cin >> inputName;
+
+    cout << inputName << " entered " << inputNumber << endl;
 
     return 0;
-}
-
-int main() {
-    return demoConsoleOutput();
 }
 
