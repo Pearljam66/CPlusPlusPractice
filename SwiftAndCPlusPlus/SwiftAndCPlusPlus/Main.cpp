@@ -5,13 +5,13 @@
 //  Created by Sarah Clark on 4/16/24.
 //
 
-// Lesson 2.2
-// The using namespace Declaration
+// Lesson 2.3
+// Another demonstration of the using keyword
 #include <iostream>
 
 int main() {
-    // Tell the compiler what namespace to search in
-    using namespace std;
+    using std::cout;
+    using std::endl;
 
     cout << "Hello World" << endl;
 
